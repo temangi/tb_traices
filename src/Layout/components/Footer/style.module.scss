@@ -58,13 +58,8 @@
     }
     .header_right__logos {
       display: flex;
-      align-items: center;
       gap: 25px;
       img {
-        padding: 16px;
-        border: 1px solid rgb(0, 128, 96);
-        border-radius: 100px;
-        background: rgb(255, 255, 255);
         cursor: pointer;
       }
     }

@@ -1,8 +1,8 @@
 import style from "./style.module.scss";
-import logo from "../img/fontisto_tripadvisor.png";
-import whatsApp from "../img/whatsapp.png";
-import facebook from "../img/facebook.png";
-import insta from "../img/instagram.png";
+import logo from "../img/fontisto.svg";
+import whatsApp from "../img/whatsapp.svg";
+import facebook from "../img/facebook.svg";
+import insta from "../img/insta.svg";
 
 const Footer = () => {
   return (
