@@ -1,0 +1,116 @@
+.header {
+  padding: 40px 64px;
+  display: flex;
+  justify-content: space-between;
+  // gap: 120px;
+  .header_left {
+    width: 26%;
+    h2 {
+      color: rgb(0, 128, 96);
+      font-size: 24px;
+      font-weight: 600;
+    }
+    p {
+      margin-top: 10px;
+      line-height: 25px;
+      color: rgb(134, 134, 134);
+      font-size: 16px;
+      font-weight: 500;
+      vertical-align: top;
+      b {
+        color: rgb(71, 71, 71);
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+  .header_middle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h2 {
+      color: rgb(0, 128, 96);
+      font-size: 24px;
+      font-weight: 600;
+    }
+    p {
+      color: rgb(134, 134, 134);
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      b {
+        color: rgb(71, 71, 71);
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+  .header_right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h2 {
+      color: rgb(0, 128, 96);
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .header_right__logos {
+      display: flex;
+      gap: 25px;
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.footer {
+  padding: 20px 64px 30px 64px;
+  display: flex;
+  justify-content: space-between;
+  p {
+    color: rgb(71, 71, 71);
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1385px) {
+  .header {
+    .header_left {
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        margin: 5px;
+        font-size: 14px;
+        b {
+          font-size: 14px;
+        }
+      }
+    }
+    .header_middle {
+      gap: 5px;
+      h2 {
+        font-size: 18px;
+      }
+    }
+    .header_right {
+      h2 {
+        font-size: 18px;
+      }
+      .header_right__logos {
+        width: 70%;
+        flex-wrap: wrap;
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+  .footer {
+    p {
+      font-size: 12px;
+    }
+  }
+}

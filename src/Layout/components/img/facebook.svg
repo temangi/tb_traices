@@ -1,0 +1,16 @@
+<svg width="50.000000" height="50.000000" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip12_5221">
+			<rect id="ic:baseline-facebook" width="22.580643" height="22.580643" transform="translate(13.709717 13.709473)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Rectangle 172" x="0.500000" y="0.500000" rx="24.500000" width="49.000000" height="49.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+	<rect id="Rectangle 172" x="0.500000" y="0.500000" rx="24.500000" width="49.000000" height="49.000000" stroke="#008060" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<rect id="ic:baseline-facebook" width="22.580643" height="22.580643" transform="translate(13.709717 13.709473)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip12_5221)">
+		<path id="Vector" d="M34.4084 25C34.4084 19.8064 30.1934 15.5913 25 15.5913C19.8064 15.5913 15.5913 19.8064 15.5913 25C15.5913 29.5537 18.8279 33.3452 23.1182 34.2202L23.1182 27.8225L21.2366 27.8225L21.2366 25L23.1182 25L23.1182 22.6477C23.1182 20.8318 24.5952 19.3547 26.4111 19.3547L28.7634 19.3547L28.7634 22.1772L26.8816 22.1772C26.3643 22.1772 25.9407 22.6008 25.9407 23.1182L25.9407 25L28.7634 25L28.7634 27.8225L25.9407 27.8225L25.9407 34.3616C30.6921 33.8911 34.4084 29.8831 34.4084 25Z" fill="#008060" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

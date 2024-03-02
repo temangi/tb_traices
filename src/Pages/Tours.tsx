@@ -1,9 +1,14 @@
-const Tours = () => {
-    return(
-        <>
-            <h1>Tours</h1>
-        </>
-    )
-}
+import Footer from "../Layout/components/Footer/Footer";
+import Header from "../Layout/components/Header/Header";
 
-export default Tours 
+const Tours = () => {
+  return (
+    <>
+      <Header />
+      <h1>Tours</h1>
+      <Footer />
+    </>
+  );
+};
+
+export default Tours;
