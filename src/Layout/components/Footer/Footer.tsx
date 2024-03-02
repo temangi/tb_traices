@@ -33,10 +33,10 @@ const Footer = () => {
         <article className={style.header_right}>
           <h2>Follow us</h2>
           <section className={style.header_right__logos}>
-            <img src={logo} alt="" />
-            <img src={whatsApp} alt="" />
-            <img src={facebook} alt="" />
-            <img src={insta} alt="" />
+            <img src={logo} alt="owl" />
+            <img src={whatsApp} alt="WhatsApp" />
+            <img src={facebook} alt="Facebook" />
+            <img src={insta} alt="Instagram" />
           </section>
         </article>
       </footer>

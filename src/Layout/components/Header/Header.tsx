@@ -10,10 +10,10 @@ const Header = () => {
 
   const links: Link[] = [
     { link: "Home", href: "/" },
-    { link: "Tours", href: "" },
-    { link: "Destinations", href: "" },
-    { link: "About us", href: "" },
-    { link: "Share tours", href: "" },
+    { link: "Tours", href: "/Tours" },
+    { link: "Destinations", href: "/Destinations" },
+    { link: "About us", href: "/AboutUs" },
+    { link: "Share tours", href: "/ShareTours" },
   ];
 
   const memoLinks = useMemo(() => {
@@ -30,13 +30,13 @@ const Header = () => {
     <>
       <header className={style.header}>
         <div className={style.header_left}>
-          <h3>Kyrgyz Traces</h3>
+          <a href="/">Kyrgyz Traces</a>
           <hr />
           <section className={style.header__links}>{memoLinks}</section>
         </div>
         <div className={style.header_right}>
           <input placeholder="Search tour" type="text" />
-          <img src={search} alt="" />
+          <img src={search} alt="search icon" />
         </div>
       </header>
     </>
