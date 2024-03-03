@@ -12,20 +12,20 @@
       background: rgb(169, 169, 169);
       transform: rotate(90deg);
     }
-    a{
+    p {
       color: rgb(71, 71, 71);
-      font-size: 19px;
-      font-weight: 600;
+      // font-size: 20px;
+      font-weight: 700;
       text-decoration: none;
       cursor: pointer;
     }
     .header__links {
       display: flex;
       gap: 50px;
-      a {
+      .header_links__a {
         color: rgb(71, 71, 71);
-        font-size: 16px;
-        font-weight: 500;
+        // font-size: 17px;
+        font-weight: 600;
         text-decoration: none;
         &:hover {
           color: rgb(0, 128, 96);
@@ -46,13 +46,18 @@
     }
   }
 }
+.active_select__a {
+  color: rgb(0, 128, 96);
+  font-weight: 600;
+  text-decoration: none;
+}
 
 @media screen and (min-width: 767px) and (max-width: 1385px) {
   .header {
     // gap: 100px;
     .header_left {
       hr {
-        margin: 0 ;
+        margin: 0;
       }
       h3 {
         font-size: 17px;
@@ -62,10 +67,6 @@
         a {
           font-size: 13px;
         }
-      }
-    }
-    .header_right {
-      input {
       }
     }
   }
