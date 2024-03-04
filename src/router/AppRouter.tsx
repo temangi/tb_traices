@@ -8,7 +8,7 @@ import ShareTours from "../Pages/ShareTours";
 const AppRouter: React.FC = () => {
   return (
     <>
-     <Routes>
+      <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Tours" element={<Tours />} />
         <Route path="/Destinations" element={<Destinations />} />

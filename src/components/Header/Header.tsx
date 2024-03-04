@@ -1,6 +1,6 @@
 import style from "./style.module.scss";
 import search from "../img/searchIcon.svg";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -9,9 +9,8 @@ const Header = () => {
     href: string;
   }
 
-  const [select, setSelect] = useState<string>("all");
-  const location = useLocation()
-  
+  const location = useLocation();
+
   const links: Link[] = [
     { link: "Home", href: "/" },
     { link: "Tours", href: "/Tours" },
@@ -19,22 +18,15 @@ const Header = () => {
     { link: "About us", href: "/AboutUs" },
     { link: "Share tours", href: "/ShareTours" },
   ];
-  
-  const clickSelect = (link: string) => {
-    setSelect(link);
-  };
-
-  useEffect(() => {
-    console.log("select changed:", select);
-  }, [select]);
 
   const memoLinks = useMemo(() => {
     return links.map((a, id) => {
       return (
         <Link
-          onClick={() => clickSelect(a.link)}
           className={
-            location.pathname === a.href ? style.active_select__a : style.header_links__a
+            location.pathname === a.href
+              ? style.active_select__a
+              : style.header_links__a
           }
           key={id}
           to={a.href}
@@ -43,13 +35,15 @@ const Header = () => {
         </Link>
       );
     });
-  }, [links, select]);
+  }, [links]);
 
   return (
     <>
       <header className={style.header}>
         <div className={style.header_left}>
-          <p>Kyrgyz Traces</p>
+          <a className={style.header_left__a} href="/">
+            Kyrgyz Traces
+          </a>
           <hr />
           <section className={style.header__links}>{memoLinks}</section>
         </div>
