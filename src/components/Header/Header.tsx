@@ -1,12 +1,15 @@
 import style from "./style.module.scss";
 import search from "../img/searchIcon.svg";
 import { useMemo } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   interface Link {
     link: string;
     href: string;
   }
+
+  const location = useLocation();
 
   const links: Link[] = [
     { link: "Home", href: "/" },
@@ -19,9 +22,17 @@ const Header = () => {
   const memoLinks = useMemo(() => {
     return links.map((a, id) => {
       return (
-        <a key={id} href={a.href}>
+        <Link
+          className={
+            location.pathname === a.href
+              ? style.active_select__a
+              : style.header_links__a
+          }
+          key={id}
+          to={a.href}
+        >
           {a.link}
-        </a>
+        </Link>
       );
     });
   }, [links]);
@@ -30,7 +41,9 @@ const Header = () => {
     <>
       <header className={style.header}>
         <div className={style.header_left}>
-          <a href="/">Kyrgyz Traces</a>
+          <a className={style.header_left__a} href="/">
+            Kyrgyz Traces
+          </a>
           <hr />
           <section className={style.header__links}>{memoLinks}</section>
         </div>
