@@ -6,12 +6,12 @@ import aboutUs from "../img/AboutUsBg.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import  Dots  from 'react-slick';
-
+import Dots from "react-slick";
+import { useMemo } from "react";
 
 const Main = () => {
   interface Settings {
-    dots: boolean,
+    dots: boolean;
     infinite: boolean;
     slidesToScroll: number;
     autoplay: boolean;
@@ -30,13 +30,19 @@ const Main = () => {
 
   const Images: string[] = [home, tours, destinations, aboutUs];
 
-  return (
-    <>
+  const memoSlider = useMemo(() => {
+    return (
       <Slider {...settings}>
         {Images.map((img, id) => {
           return <img key={id} src={img} alt="" />;
         })}
       </Slider>
+    );
+  }, [settings, Images]);
+
+  return (
+    <>
+      {memoSlider}
       <main className={style.main}>
         <p>Welcome to Kyrgyz Traces</p>
         <h1>Discover the Kyrgyzstan</h1>
@@ -46,7 +52,7 @@ const Main = () => {
           <button>Watch video</button>
         </section>
         <article className={style.main_pagination}>
-      <Dots />
+          <Dots />
         </article>
       </main>
     </>
