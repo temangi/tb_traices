@@ -7,14 +7,14 @@
     display: flex;
     align-items: center;
     hr {
-      margin: 0 40px;
+      margin: 0 20px;
       width: 40px;
       background: rgb(169, 169, 169);
       transform: rotate(90deg);
     }
     .header_left__a{
       color: rgb(71, 71, 71);
-      // font-size: 20px;
+      font-size: 20px;
       font-weight: 700;
       text-decoration: none;
       cursor: pointer;
@@ -22,9 +22,10 @@
     .header__links {
       display: flex;
       gap: 50px;
+      align-items: center;
       .header_links__a {
         color: rgb(71, 71, 71);
-        // font-size: 17px;
+        // font-size: px;
         font-weight: 600;
         text-decoration: none;
         &:hover {
@@ -57,15 +58,35 @@
     // gap: 100px;
     .header_left {
       hr {
-        margin: 0;
+        margin: 0 5px;
       }
       h3 {
-        font-size: 17px;
+        font-size: 16px;
       }
       .header__links {
         gap: 25px;
         a {
-          font-size: 13px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1100px) {
+  .header {
+    // gap: 100px;
+    .header_left {
+      hr {
+        margin: 0;
+      }
+      h3 {
+        font-size: 14px;
+      }
+      .header__links {
+        gap: 25px;
+        a {
+          font-size: 12px;
         }
       }
     }

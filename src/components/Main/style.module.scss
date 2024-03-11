@@ -1,10 +1,10 @@
 .main {
   position: absolute;
   top: 40%;
-  right: 9%;
+  right: 7%;
+  left: 7%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   p {
     color: rgb(255, 255, 255);
@@ -21,7 +21,7 @@
     display: flex;
     gap: 30px;
     button {
-      padding: 18px 65px ;
+      padding: 18px 65px;
       color: rgb(255, 255, 255);
       font-size: 16px;
       font-weight: 500;
@@ -32,6 +32,10 @@
       backdrop-filter: blur(8px);
       background: rgba(255, 255, 255, 0.3);
       cursor: pointer;
+      &:hover {
+        color: black;
+        background: white;
+      }
     }
   }
 }
@@ -59,7 +63,7 @@
     }
     .main_btns {
       button {
-        padding: 16px 60px ;
+        padding: 16px 60px;
         font-size: 13px;
       }
     }
@@ -76,7 +80,7 @@
     }
     .main_btns {
       button {
-        padding: 13px 55px ;
+        padding: 13px 55px;
         font-size: 11px;
       }
     }

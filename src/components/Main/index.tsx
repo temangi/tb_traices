@@ -9,7 +9,12 @@ import "slick-carousel/slick/slick-theme.css";
 import Dots from "react-slick";
 import { useMemo } from "react";
 
-const Main = () => {
+interface MainProps {
+  title: string;
+}
+const array: string[] = [home, tours, destinations, aboutUs];
+
+const Main: React.FC<MainProps> = ( {title} ) => {
   interface Settings {
     dots: boolean;
     infinite: boolean;
@@ -24,28 +29,27 @@ const Main = () => {
     infinite: true,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 6000,
     pauseOnHover: true,
   };
 
-  const Images: string[] = [home, tours, destinations, aboutUs];
 
   const memoSlider = useMemo(() => {
     return (
       <Slider {...settings}>
-        {Images.map((img, id) => {
-          return <img key={id} src={img} alt="" />;
+        {array.map((item, id) => {
+          return <img key={id} src={item} alt="" />;
         })}
       </Slider>
     );
-  }, [settings, Images]);
+  }, [settings, array]);
 
   return (
     <>
       {memoSlider}
       <main className={style.main}>
         <p>Welcome to Kyrgyz Traces</p>
-        <h1>Discover the Kyrgyzstan</h1>
+        <h1>{title}</h1>
         <section className={style.main_btns}>
           <button>Find your tours</button>
           <button>Share tours</button>

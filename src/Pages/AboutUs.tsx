@@ -3,10 +3,11 @@ import Header from "../components/Header/Header";
 import Main from "../components/Main";
 
 const AboutUs = () => {
+  const title = "About Kyrgyz Traces";
   return (
     <>
       <Header />
-      <Main/>
+      <Main title={title} />
       <h1>About us</h1>
       <Footer />
     </>
