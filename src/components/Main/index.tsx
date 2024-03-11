@@ -1,8 +1,4 @@
 import style from "./style.module.scss";
-import home from "../img/HomeBg.png";
-import tours from "../img/TourBg.png";
-import destinations from "../img/DestinationsBg.png";
-import aboutUs from "../img/AboutUsBg.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,10 +7,10 @@ import { useMemo } from "react";
 
 interface MainProps {
   title: string;
+  array: string[];
 }
-const array: string[] = [home, tours, destinations, aboutUs];
 
-const Main: React.FC<MainProps> = ( {title} ) => {
+const Main: React.FC<MainProps> = ({ array, title }) => {
   interface Settings {
     dots: boolean;
     infinite: boolean;
@@ -32,7 +28,6 @@ const Main: React.FC<MainProps> = ( {title} ) => {
     autoplaySpeed: 6000,
     pauseOnHover: true,
   };
-
 
   const memoSlider = useMemo(() => {
     return (
