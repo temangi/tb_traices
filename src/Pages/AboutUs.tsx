@@ -13,7 +13,6 @@ const AboutUs = () => {
     <>
       <Header />
       <Main array={array} title={title} />
-      <h1>About us</h1>
       <Footer />
     </>
   );

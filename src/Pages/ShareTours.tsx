@@ -4,7 +4,6 @@ const ShareTours = () => {
   return (
     <>
       <Header />
-      <h1>ShareTours</h1>
       <Footer />
     </>
   );

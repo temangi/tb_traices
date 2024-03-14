@@ -13,7 +13,6 @@ const Tours = () => {
     <>
       <Header />
       <Main array={array} title={title} />
-      <h1>Tours</h1>
       <Footer />
     </>
   );

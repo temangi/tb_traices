@@ -13,7 +13,6 @@ const Destinations = () => {
     <>
       <Header />
       <Main array={array} title={title} />
-      <h1>Destinations</h1>
       <Footer />
     </>
   );
