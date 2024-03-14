@@ -3,7 +3,7 @@ import HomePage from "../Pages/HomePage";
 import Tours from "../Pages/Tours";
 import Destinations from "../Pages/Destination";
 import AboutUs from "../Pages/AboutUs";
-import ShareTours from "../Pages/ShareTours";
+import ShareToursPage from "../Pages/ShareToursPage";
 
 const AppRouter: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const AppRouter: React.FC = () => {
         <Route path="/Tours" element={<Tours />} />
         <Route path="/Destinations" element={<Destinations />} />
         <Route path="/AboutUs" element={<AboutUs />} />
-        <Route path="/ShareTours" element={<ShareTours />} />
+        <Route path="/ShareTours" element={<ShareToursPage />} />
       </Routes>
     </>
   );
