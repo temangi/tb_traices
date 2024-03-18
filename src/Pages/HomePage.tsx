@@ -13,14 +13,39 @@ import TeamCards from "../components/TourCards/TeamCards";
 const HomePage = () => {
   const array: string[] = [home, tours, destinations, aboutUs];
   const title = "Discover the Kyrgyzstan";
+  const shaar: string[] = ["Naryn"];
+  const day: number[] = [7];
+
+  interface Review {
+    name: string;
+    country: string;
+    description: string;
+  }
+
+  const ReviewObj: Review = {
+    name: "TOKTORBAEVA SABRINA",
+    country: "Kyrgyzstan",
+    description:
+      "We had a great time on 12 days best of Turkey. What made it amazing was the great people from down under, England, Spain and the USA. Samy, no words to describe your sage...",
+  };
+
+  interface Team {
+    name: string;
+    description: string;
+  }
+
+  const TeamObj: Team = {
+    name: "Samira Djakipova",
+    description: "Treking guide",
+  };
   return (
     <>
       <Header />
       <Main array={array} title={title} />
-      <FindToursCard/>
-      <DestinationCard/>
-      <ReviewsCard/>
-      <TeamCards/>
+      <FindToursCard days={day} title={shaar} />
+      <DestinationCard days={day} title={shaar} />
+      <ReviewsCard obj={ReviewObj} />
+      <TeamCards obj={TeamObj} />
       <Footer />
     </>
   );
