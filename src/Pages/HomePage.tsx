@@ -10,17 +10,30 @@ import DestinationCard from "../components/TourCards/DestinationCard";
 import ReviewsCard from "../components/TourCards/ReviewsCard";
 import TeamCards from "../components/TourCards/TeamCards";
 
+interface Tours {
+  title: string;
+  days: number;
+}
+
+interface Review {
+  name: string;
+  country: string;
+  description: string;
+}
+
+interface Team {
+  name: string;
+  description: string;
+}
+
 const HomePage = () => {
   const array: string[] = [home, tours, destinations, aboutUs];
   const title = "Discover the Kyrgyzstan";
-  const shaar: string[] = ["Naryn"];
-  const day: number[] = [7];
 
-  interface Review {
-    name: string;
-    country: string;
-    description: string;
-  }
+  const ToursObj: Tours = {
+    title: "Naryn",
+    days: 5,
+  };
 
   const ReviewObj: Review = {
     name: "TOKTORBAEVA SABRINA",
@@ -28,11 +41,6 @@ const HomePage = () => {
     description:
       "We had a great time on 12 days best of Turkey. What made it amazing was the great people from down under, England, Spain and the USA. Samy, no words to describe your sage...",
   };
-
-  interface Team {
-    name: string;
-    description: string;
-  }
 
   const TeamObj: Team = {
     name: "Samira Djakipova",
@@ -42,8 +50,8 @@ const HomePage = () => {
     <>
       <Header />
       <Main array={array} title={title} />
-      <FindToursCard days={day} title={shaar} />
-      <DestinationCard days={day} title={shaar} />
+      <FindToursCard obj={ToursObj} />
+      <DestinationCard obj={ToursObj} />
       <ReviewsCard obj={ReviewObj} />
       <TeamCards obj={TeamObj} />
       <Footer />
