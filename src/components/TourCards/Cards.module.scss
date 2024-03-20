@@ -1,0 +1,187 @@
+.tour {
+  //   background:   #faf7ed;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  width: 363px;
+  height: auto;
+  border-radius: 3px;
+  position: relative;
+  img {
+    border-radius: 3px;
+  }
+  .tour__days {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    b {
+      border-radius: 0px 3px 0px 32px;
+      padding: 24px 15px;
+      background: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: normal;
+      color: #008060;
+    }
+  }
+  .tour__bottom {
+    padding: 15px 20px;
+    .bottom__title {
+      cursor: pointer;
+      p {
+        margin-bottom: 4px;
+        color: rgb(134, 134, 134);
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+      }
+      h3 {
+        padding-bottom: 14px;
+        color: rgb(71, 71, 71);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        border-bottom: 1px solid rgb(220, 220, 220);
+      }
+    }
+    .bottom__choice {
+      p {
+        margin: 14px 0 10px 0;
+        color: rgb(134, 134, 134);
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+      }
+      .bottom__choice_btns {
+        display: flex;
+        justify-content: space-between;
+        button {
+          padding: 7px 18px;
+          color: rgb(0, 128, 96);
+          font-size: 15px;
+          font-weight: 400;
+          box-sizing: border-box;
+          border: 1px solid rgb(42, 206, 165);
+          border-radius: 3px;
+          background: rgb(255, 255, 255);
+          cursor: pointer;
+          &:hover {
+            background: rgb(0, 128, 96);
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.destination {
+  width: 363px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(255, 255, 255);
+  position: relative;
+  .destination__days {
+    display: flex;
+    position: absolute;
+    right: 0;
+    b {
+      padding: 24px 15px;
+      color: rgb(0, 128, 96);
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 0px 3px 0px 32px;
+      background: rgb(255, 255, 255);
+    }
+  }
+  .destination__bottom {
+    padding: 15px 20px;
+    p {
+      color: rgb(134, 134, 134);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    h3 {
+      color: rgb(71, 71, 71);
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+
+.review {
+  padding: 20px;
+  width: 364px;
+  border: 1px solid rgb(169, 169, 169);
+  border-radius: 3px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(255, 255, 255);
+  .review__header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    cursor: pointer;
+    h3 {
+      margin-bottom: 4px;
+      color: rgb(71, 71, 71);
+      font-size: 16px;
+      font-weight: 600;
+    }
+    p {
+      color: rgb(0, 128, 96);
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  .review__description {
+    margin: 20px 0;
+    width: 100%;
+    color: rgb(134, 134, 134);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    cursor: pointer;
+  }
+  button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+    background: rgb(0, 76, 63);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.team {
+  width: 264px;
+  background: rgb(0, 76, 63);
+  .team__image {
+    margin-bottom: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .team__bottom {
+    padding: 15px 10px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    h3 {
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    p {
+      color: rgb(134, 134, 134);
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
