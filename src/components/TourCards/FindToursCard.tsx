@@ -2,13 +2,13 @@ import style from "./Cards.module.scss";
 import img from "../img/Picture 1.svg";
 
 interface TourCardsProp {
-  obj:{
-  title: string;
-  days: number;
-  }
+  obj: {
+    title: string;
+    days: number;
+  };
 }
 
-const FindToursCard: React.FC<TourCardsProp> = ({obj}) => {
+const FindToursCard: React.FC<TourCardsProp> = ({ obj }) => {
   return (
     <article className={style.tour}>
       <div className={style.tour__days}>
