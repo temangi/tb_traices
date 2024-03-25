@@ -2,7 +2,6 @@ import style from "./style.module.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Dots from "react-slick";
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
 
@@ -10,26 +9,17 @@ interface MainProps {
   title: string;
   array: string[];
 }
-interface Settings {
-  dots: boolean;
-  infinite: boolean;
-  slidesToScroll: number;
-  autoplay: boolean;
-  autoplaySpeed: number;
-  pauseOnHover: boolean;
-}
-
 interface Links {
   title: string;
   link: string;
 }
 const Main: React.FC<MainProps> = ({ array, title }) => {
-  const settings: Settings = {
+  const settings = {
     dots: true,
     infinite: true,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 2000,
     pauseOnHover: true,
   };
 
@@ -62,8 +52,8 @@ const Main: React.FC<MainProps> = ({ array, title }) => {
     return (
       <section className={style.main_btns}>
         {links.map((item, id) => (
-          <Link to={item.link}>
-            <button key={id}>{item.title}</button>
+          <Link key={id} to={item.link}>
+            <button>{item.title}</button>
           </Link>
         ))}
       </section>
@@ -78,7 +68,6 @@ const Main: React.FC<MainProps> = ({ array, title }) => {
         <h1>{title}</h1>
         {renderBtns}
         <article className={style.main_pagination}>
-          <Dots />
         </article>
       </main>
     </>

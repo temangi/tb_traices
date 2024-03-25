@@ -31,7 +31,7 @@
       border-radius: 32px;
       backdrop-filter: blur(8px);
       background: rgba(255, 255, 255, 0.3);
-      transition: .4s ease-in-out;
+      transition: 0.4s ease-in-out;
       cursor: pointer;
       &:hover {
         color: black;
@@ -184,4 +184,10 @@
       }
     }
   }
+}
+
+.slick-prev,
+.slick-next {
+  right: 0 !important;
+  display: none !important;
 }
