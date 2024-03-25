@@ -3,6 +3,7 @@ import logo from "../img/fontisto.svg";
 import whatsApp from "../img/whatsapp.svg";
 import facebook from "../img/facebook.svg";
 import insta from "../img/insta.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
           <h2>Kyrgyz Traces</h2>
           <p>
             We are proudly the Best Inside Travel DMCs & Tour Operators in each
-            destination where you travel to, our. Operat... <b>Read more</b>
+            destination where you travel to, our. Operat... <Link to='/AboutUs'>Read more</Link>
           </p>
         </article>
         <article className={style.header_middle}>

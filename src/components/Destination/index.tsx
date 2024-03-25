@@ -5,6 +5,7 @@ import DestinationCard from "../TourCards/DestinationCard";
 import Prev from "../sliderButton/PrevButton";
 import Next from "../sliderButton/NextButton";
 import arrow from "../img/ArrowRight.svg";
+import { Link } from "react-router-dom";
 
 interface Tour {
   title: string;
@@ -66,7 +67,7 @@ const Destination = () => {
   const settings = {
     dots: false,
     infinite: false,
-    speed: 500,
+    speed: 900,
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
@@ -124,10 +125,12 @@ const Destination = () => {
               tell you what attractions and tours there are in this area.
             </p>
           </section>
-          <section className={style.header__right}>
-            <p>Watch all sights</p>
-            <img src={arrow} alt="" />
-          </section>
+          <Link to="/destinations">
+            <section className={style.header__right}>
+              <p>Watch all sights</p>
+              <img src={arrow} alt="arrow" />
+            </section>
+          </Link>
         </article>
         <hr />
         <Slider {...settings}>{DestinationCardsMemo}</Slider>

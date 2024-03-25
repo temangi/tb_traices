@@ -6,25 +6,17 @@ import tours from "../components/img/TourBg.png";
 import destinations from "../components/img/DestinationsBg.png";
 import aboutUs from "../components/img/AboutUsBg.png";
 import FindToursCard from "../components/TourCards/FindToursCard";
-import ReviewsCard from "../components/TourCards/ReviewsCard";
-import TeamCards from "../components/TourCards/TeamCards";
+// import ReviewsCard from "../components/TourCards/ReviewsCard";
+// import TeamCards from "../components/TourCards/TeamCards";
 import Destination from "../components/Destination";
+import Review from "../components/Reviews";
+import { Team } from "../components/Team";
 
 interface Tour {
   title: string;
   days: number;
 }
 
-interface Team {
-  name: string;
-  description: string;
-}
-
-interface Review {
-  name: string;
-  country: string;
-  description: string;
-}
 
 const HomePage = () => {
   const array: string[] = [home, tours, destinations, aboutUs];
@@ -35,25 +27,17 @@ const HomePage = () => {
     days: 5,
   };
 
-  const ReviewObj: Review = {
-    name: "TOKTORBAEVA SABRINA",
-    country: "Kyrgyzstan",
-    description:
-      "We had a great time on 12 days best of Turkey. What made it amazing was the great people from down under, England, Spain and the USA. Samy, no words to describe your sage...",
-  };
 
-  const TeamObj: Team = {
-    name: "Samira Djakipova",
-    description: "Treking guide",
-  };
   return (
     <>
       <Header />
       <Main array={array} title={title} />
       <FindToursCard obj={ToursObj} />
-      <Destination/>
-      <ReviewsCard obj={ReviewObj} />
-      <TeamCards obj={TeamObj} />
+      <Destination />
+      <Review />
+      {/* <ReviewsCard obj={ReviewObj} /> */}
+      <Team />
+      {/* <TeamCards obj={TeamObj} /> */}
       <Footer />
     </>
   );

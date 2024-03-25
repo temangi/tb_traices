@@ -1,12 +1,10 @@
 .slider {
-  position: relative;
-  background: rgb(0, 76, 63);
   padding: 40px 150px;
-  display: flex;
-  gap: 40px;
-  justify-content: space-between;
-  flex-direction: column;
+  background: #004c3f;
   transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   :global {
     .slick-list {
       margin: 0 -10px;
@@ -16,39 +14,13 @@
     }
   }
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    a {
-      text-decoration: none;
-    }
-    .header__left {
-      h1 {
-        color: rgb(255, 255, 255);
-        font-size: 42px;
-        font-weight: 500;
-        margin-bottom: 15px;
-      }
-      p {
-        color: rgb(255, 255, 255);
-        font-size: 20px;
-        font-weight: 400;
-        width: 523px;
-      }
-    }
-    .header__right {
-      display: flex;
-      gap: 20px;
-      cursor: pointer;
-      p {
-        color: rgb(255, 255, 255);
-        font-size: 18px;
-        font-weight: 500;
-      }
+    h1 {
+      color: rgb(255, 255, 255);
+      font-size: 42px;
+      font-weight: 500;
     }
   }
 }
-
 .prev__arrow {
   position: absolute;
   top: 40%;
@@ -58,7 +30,7 @@
 .next__arrow {
   position: absolute;
   top: 40%;
-  right: 45px;
+  right: 40px;
   @media (max-width: 1490px) {
     right: 30px;
   }
