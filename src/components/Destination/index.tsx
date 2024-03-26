@@ -77,30 +77,15 @@ const Destination = () => {
       {
         breakpoint: 1210,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 3,
           slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 840,
-        settings: {
-          slidesToShow: 1.8,
-          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 740,
         settings: {
-          slidesToShow: 1.5,
-          slidesToScroll: 1,
+          slidesToShow: 2.5,
+          slidesToScroll: 2,
         },
       },
     ],

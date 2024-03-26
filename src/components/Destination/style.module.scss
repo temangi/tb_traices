@@ -59,7 +59,7 @@
   position: absolute;
   top: 40%;
   right: 45px;
-  @media (max-width: 1490px) {
+  @media (max-width: 1497px) {
     right: 30px;
   }
   @media (max-width: 1440px) {
@@ -88,22 +88,22 @@
 
 @media (max-width: 1430px) {
   .slider {
-    padding: 40px 100px;
+    padding: 40px 120px;
   }
 }
 @media (max-width: 1330px) {
   .slider {
-    padding: 40px 80px;
+    padding: 40px 100px;
   }
 }
 
 @media (max-width: 1290px) {
   .slider {
-    padding: 40px 50px;
+    padding: 40px 80px;
   }
 }
 
-@media (max-width: 1228px) {
+@media (max-width: 1240px) {
   .slider {
     padding: 40px;
   }
