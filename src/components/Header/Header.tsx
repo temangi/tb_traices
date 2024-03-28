@@ -1,5 +1,6 @@
 import style from "./style.module.scss";
 import search from "../img/searchIcon.svg";
+// import button from "../img/menu_10765904.png"
 import { useMemo } from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -47,6 +48,7 @@ const Header = () => {
           <hr />
           <section className={style.header__links}>{memoLinks}</section>
         </div>
+        {/* <img className={style.header_right__button} src={button} alt="" /> */}
         <div className={style.header_right}>
           <input placeholder="Search tour" type="text" />
           <img src={search} alt="search icon" />
