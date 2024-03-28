@@ -8,6 +8,11 @@
 }
 .slick-prev,
 .slick-next {
+  right: 0 !important;
+display: none !important; 
+}
+
+.slick-next {
   display: none !important;
 }
 
@@ -23,6 +28,9 @@
   margin: 0 15px !important;
   border-radius: 50%;
   background: rgb(199, 231, 255);
+  &:hover {
+    background: rgb(250, 255, 0);
+  }
 }
 .slick-dots li button::before {
   font-size: 0px !important;
