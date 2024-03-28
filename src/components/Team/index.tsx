@@ -68,7 +68,28 @@ export const Team = () => {
         },
       },
       {
-        breakpoint: 800,
+        breakpoint: 945,
+        settings: {
+          slidesToShow: 3.8,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3.4,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 820,
+        settings: {
+          slidesToShow: 3.2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 770,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2,

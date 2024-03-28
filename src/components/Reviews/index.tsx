@@ -100,25 +100,38 @@ const Review = () => {
         },
       },
       {
-        breakpoint: 1000,
+        breakpoint: 975,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2.8,
           slidesToScroll: 2,
-          initialSlide: 2,
         },
       },
       {
-        breakpoint: 840,
+        breakpoint: 910,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToShow: 2.6,
+          slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 740,
+        breakpoint: 855,
         settings: {
-          slidesToShow: 1.5,
-          slidesToScroll: 1,
+          slidesToShow: 2.4,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 795,
+        settings: {
+          slidesToShow: 2.3,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],

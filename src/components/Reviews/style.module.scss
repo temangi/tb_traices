@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  @media (max-width: 930px) {
+    gap: 30px;
+  }
   :global {
     .slick-list {
       margin: 0 -10px;
@@ -22,6 +25,9 @@
       color: rgb(71, 71, 71);
       font-size: 42px;
       font-weight: 500;
+      @media (max-width: 930px) {
+        font-size: 38px;
+      }
     }
     .header__right {
         display: flex;
@@ -31,6 +37,9 @@
         color: rgb(0, 128, 96);
         font-size: 18px;
         font-weight: 500;
+        @media (max-width: 930px) {
+          font-size: 16px;
+        }
       }
     }
   }

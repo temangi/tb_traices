@@ -7,6 +7,9 @@
   justify-content: space-between;
   flex-direction: column;
   transition: 0.3s ease-in-out;
+  @media (max-width: 930px) {
+    gap: 20px;
+  }
   :global {
     .slick-list {
       margin: 0 -10px;
@@ -28,12 +31,19 @@
         font-size: 42px;
         font-weight: 500;
         margin-bottom: 15px;
+        @media (max-width: 930px) {
+          font-size: 38px;
+        }
       }
       p {
         color: rgb(255, 255, 255);
         font-size: 20px;
         font-weight: 400;
         width: 523px;
+        @media (max-width: 930px) {
+          font-size: 16px;
+          width: 380px;
+        }
       }
     }
     .header__right {
@@ -44,6 +54,9 @@
         color: rgb(255, 255, 255);
         font-size: 18px;
         font-weight: 500;
+        @media (max-width: 930px) {
+          font-size: 16px;
+        }
       }
     }
   }

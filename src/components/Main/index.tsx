@@ -46,7 +46,7 @@ const Main: React.FC<MainProps> = ({ array, title }) => {
         })}
       </Slider>
     );
-  }, [settings, array]);
+  }, []);
 
   const renderBtns = useMemo(() => {
     return (
@@ -58,7 +58,7 @@ const Main: React.FC<MainProps> = ({ array, title }) => {
         ))}
       </section>
     );
-  }, [links]);
+  }, []);
 
   return (
     <>
@@ -67,8 +67,7 @@ const Main: React.FC<MainProps> = ({ array, title }) => {
         <p>Welcome to Kyrgyz Traces</p>
         <h1>{title}</h1>
         {renderBtns}
-        <article className={style.main_pagination}>
-        </article>
+        <article className={style.main_pagination}></article>
       </main>
     </>
   );

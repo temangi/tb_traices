@@ -82,9 +82,37 @@ const Destination = () => {
         },
       },
       {
-        breakpoint: 740,
+        breakpoint: 975,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 2.8,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 910,
+        settings: {
+          slidesToShow: 2.6,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 855,
+        settings: {
+          slidesToShow: 2.4,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 795,
+        settings: {
+          slidesToShow: 2.3,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 2,
           slidesToScroll: 2,
         },
       },
