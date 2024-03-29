@@ -20,7 +20,7 @@
   .header {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     h1 {
       color: rgb(71, 71, 71);
       font-size: 42px;
@@ -28,8 +28,12 @@
       @media (max-width: 930px) {
         font-size: 38px;
       }
+      @media (max-width: 730px) {
+        font-size: 36px;
+      }
+
     }
-    .header__right {
+    .header_right {
         display: flex;
         gap: 20px;
         cursor: pointer;

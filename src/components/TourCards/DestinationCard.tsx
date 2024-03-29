@@ -9,11 +9,11 @@ interface destinationProps {
 const DestinationCard: React.FC<destinationProps> = ({title, days}) => {
   return (
     <article className={style.destination}>
-      <div className={style.destination__days}>
+      <div className={style.destination_days}>
         <b>{days} days</b>
       </div>
       <img src={img} alt="" />
-      <div className={style.destination__bottom}>
+      <div className={style.destination_bottom}>
         <p>Area:</p>
         <h3>{title}</h3>
       </div>

@@ -11,7 +11,7 @@ const TeamCards: React.FC<Teamrops> = ({ name, description }) => {
   return (
     <main className={style.team}>
       <img className={style.team__image} src={img} alt="" />
-      <section className={style.team__bottom}>
+      <section className={style.team_bottom}>
         <h3>{name}</h3>
         <p> {description}</p>
       </section>

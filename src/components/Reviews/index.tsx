@@ -154,7 +154,7 @@ const Review = () => {
     <div className={style.slider}>
       <article className={style.header}>
         <h1>Reviews</h1>
-        <section className={style.header__right}>
+        <section className={style.header_right}>
           <p>Watch all sights</p>
           <img src={arrow} alt="arrow" />
         </section>

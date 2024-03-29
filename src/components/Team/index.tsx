@@ -95,6 +95,13 @@ export const Team = () => {
           slidesToScroll: 2,
         },
       },
+      {
+        breakpoint: 695,
+        settings: {
+          slidesToShow: 2.9,
+          slidesToScroll: 2,
+        },
+      },
     ],
   };
 

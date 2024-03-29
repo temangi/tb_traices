@@ -25,7 +25,7 @@
     a {
       text-decoration: none;
     }
-    .header__left {
+    .header_left {
       h1 {
         color: rgb(255, 255, 255);
         font-size: 42px;
@@ -33,6 +33,9 @@
         margin-bottom: 15px;
         @media (max-width: 930px) {
           font-size: 38px;
+        }
+        @media (max-width: 730px) {
+          font-size: 36px;
         }
       }
       p {
@@ -46,7 +49,7 @@
         }
       }
     }
-    .header__right {
+    .header_right {
       display: flex;
       gap: 20px;
       cursor: pointer;

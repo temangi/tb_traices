@@ -131,7 +131,7 @@ const Destination = () => {
     <>
       <div className={style.slider}>
         <article className={style.header}>
-          <section className={style.header__left}>
+          <section className={style.header_left}>
             <h1>Destination</h1>
             <p>
               Learn more about the beautiful sights. Choose an area and we will
@@ -139,7 +139,7 @@ const Destination = () => {
             </p>
           </section>
           <Link to="/destinations">
-            <section className={style.header__right}>
+            <section className={style.header_right}>
               <p>Watch all sights</p>
               <img src={arrow} alt="arrow" />
             </section>
