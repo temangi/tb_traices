@@ -63,8 +63,8 @@ const Main: React.FC<MainProps> = ({ array, title }) => {
     return (
       <section className={style.main_btns}>
         {links.map((item, id) => (
-          <Link to={item.link}>
-            <button className={style.custom_btn} key={id}>{item.title}</button>
+          <Link key={id} to={item.link}>
+            <button >{item.title}</button>
           </Link>
         ))}
       </section>
