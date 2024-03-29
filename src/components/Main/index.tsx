@@ -24,7 +24,7 @@ interface Links {
   link: string;
 }
 const Main: React.FC<MainProps> = ({ array, title }) => {
-  const settings: Settings = {
+  const settings:Settings = {
     dots: true,
     infinite: true,
     slidesToScroll: 1,
@@ -32,6 +32,7 @@ const Main: React.FC<MainProps> = ({ array, title }) => {
     autoplaySpeed: 6000,
     pauseOnHover: true,
   };
+  
 
   const links: Links[] = [
     {
@@ -62,8 +63,8 @@ const Main: React.FC<MainProps> = ({ array, title }) => {
     return (
       <section className={style.main_btns}>
         {links.map((item, id) => (
-          <Link to={item.link}>
-            <button key={id}>{item.title}</button>
+          <Link key={id} to={item.link}>
+            <button >{item.title}</button>
           </Link>
         ))}
       </section>
@@ -78,7 +79,7 @@ const Main: React.FC<MainProps> = ({ array, title }) => {
         <h1>{title}</h1>
         {renderBtns}
         <article className={style.main_pagination}>
-          <Dots />
+          <Dots/>
         </article>
       </main>
     </>
