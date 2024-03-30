@@ -85,35 +85,72 @@ const Destination = () => {
         breakpoint: 975,
         settings: {
           slidesToShow: 2.8,
-          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 910,
         settings: {
           slidesToShow: 2.6,
-          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 855,
         settings: {
           slidesToShow: 2.4,
-          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 795,
         settings: {
           slidesToShow: 2.3,
-          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 770,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 625,
+        settings: {
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 605,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1.9,
+        },
+      },
+      {
+        breakpoint: 485,
+        settings: {
+          slidesToShow: 1.8,
+        },
+      },
+      {
+        breakpoint: 460,
+        settings: {
+          slidesToShow: 1.6,
+        },
+      },
+      {
+        breakpoint: 410,
+        settings: {
+          slidesToShow: 1.5,
+        },
+      },
+      {
+        breakpoint: 385,
+        settings: {
+          slidesToShow: 1.4,
         },
       },
     ],

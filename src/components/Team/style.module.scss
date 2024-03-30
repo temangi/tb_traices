@@ -8,6 +8,9 @@
   @media (max-width: 930px) {
     gap: 30px;
   }
+  @media (max-width: 625px) {
+    gap: 20px;
+  }
   :global {
     .slick-list {
       margin: 0 -10px;
@@ -27,6 +30,9 @@
       @media (max-width: 730px) {
         font-size: 36px;
       }
+      @media (max-width: 625px) {
+        font-size: 24px;
+      }
     }
   }
 }
@@ -34,6 +40,9 @@
   position: absolute;
   top: 40%;
   left: -20px;
+  @media (max-width: 625px) {
+    display: none;
+  }
 }
 
 .next__arrow {
@@ -65,6 +74,9 @@
   @media (max-width: 1228px) {
     right: 18px;
   }
+  @media (max-width: 625px) {
+    display: none;
+  }
 }
 
 @media (max-width: 1430px) {
@@ -87,5 +99,23 @@
 @media (max-width: 1228px) {
   .slider {
     padding: 40px;
+  }
+}
+
+@media (max-width: 625px) {
+  .slider {
+    padding: 40px 0 40px 24px;
+
+    hr {
+      width: 95%;
+    }
+    .header {
+      padding: 0 24px 0 0;
+      .header_right {
+        img {
+          margin-top: 10px;
+        }
+      }
+    }
   }
 }

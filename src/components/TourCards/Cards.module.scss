@@ -96,6 +96,15 @@
   @media (max-width: 1010px) {
     width: 290px;
   }
+  @media (max-width: 690px) {
+    width: 270px;
+  }
+  @media (max-width: 655px) {
+    width: 250px;
+  }
+  @media (max-width: 600px) {
+    width: 242px;
+  }
   .destination_days {
     margin: 0 !important;
     display: flex;
@@ -109,6 +118,10 @@
       font-weight: 600;
       border-radius: 0px 3px 0px 32px;
       background: rgb(255, 255, 255);
+      @media (max-width: 625px) {
+        padding: 20px 15px;
+        font-size: 12px;
+      }
     }
   }
   img {
@@ -134,7 +147,10 @@
       font-size: 18px;
       font-weight: 500;
       @media (max-width: 995px) {
-        font-size: 17px;
+        font-size: 16px;
+      }
+      @media (max-width: 625px) {
+        font-size: 15px;
       }
     }
   }
@@ -163,6 +179,12 @@
   }
   @media (max-width: 695px) {
     width: 270px;
+  }
+  @media (max-width: 655px) {
+    width: 250px;
+  }
+  @media (max-width: 600px) {
+    width: 242px;
   }
   .review_header {
     display: flex;
@@ -237,7 +259,10 @@
     border: none;
     cursor: pointer;
     @media (max-width: 695px) {
-      font-size: 12px;
+      font-size: 13px;
+    }
+    @media (max-width: 500px) {
+      padding: 13px 35px;
     }
   }
 }
@@ -248,21 +273,10 @@
   @media (max-width: 1195px) {
     width: 250px;
   }
-  @media (max-width: 1135px) {
-    width: 235px;
+  @media (max-width: 860px) {
+    width: 242px;
   }
-  @media (max-width: 1080px) {
-    width: 225px;
-  }
-  @media (max-width: 1020px) {
-    width: 215px;
-  }
-  @media (max-width: 995px) {
-    width: 205px;
-  }
-  @media (max-width: 730px) {
-    width: 195px;
-  }
+
   .team__image {
     margin-bottom: 10px;
     border-radius: 3px;
@@ -270,20 +284,8 @@
     @media (max-width: 1195px) {
       width: 250px;
     }
-    @media (max-width: 1135px) {
-      width: 235px;
-    }
-    @media (max-width: 1080px) {
-      width: 225px;
-    }
-    @media (max-width: 1020px) {
-      width: 215px;
-    }
-    @media (max-width: 995px) {
-      width: 205px;
-    }
-    @media (max-width: 730px) {
-      width: 195px;
+    @media (max-width: 860px) {
+      width: 242px;
     }
   }
   .team_bottom {

@@ -64,42 +64,102 @@ export const Team = () => {
         breakpoint: 1210,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 945,
+        breakpoint: 1135,
         settings: {
           slidesToShow: 3.8,
-          slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 900,
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 3.6,
+        },
+      },
+      {
+        breakpoint: 1020,
         settings: {
           slidesToShow: 3.4,
-          slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 820,
+        breakpoint: 975,
         settings: {
           slidesToShow: 3.2,
-          slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 770,
+        breakpoint: 920,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 695,
+        breakpoint: 920,
         settings: {
-          slidesToShow: 2.9,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 830,
+        settings: {
+          slidesToShow: 2.8,
+        },
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 2.6,
+        },
+      },
+      {
+        breakpoint: 730,
+        settings: {
+          slidesToShow: 2.4,
+        },
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 2.2,
+        },
+      },
+      {
+        breakpoint: 630,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 1.8,
+        },
+      },
+      {
+        breakpoint: 485,
+        settings: {
+          slidesToShow: 1.6,
+        },
+      },
+      {
+        breakpoint: 435,
+        settings: {
+          slidesToShow: 1.5,
+        },
+      },
+      {
+        breakpoint: 385,
+        settings: {
+          slidesToShow: 1.4,
         },
       },
     ],

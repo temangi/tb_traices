@@ -103,35 +103,60 @@ const Review = () => {
         breakpoint: 975,
         settings: {
           slidesToShow: 2.8,
-          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 910,
         settings: {
           slidesToShow: 2.6,
-          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 855,
         settings: {
           slidesToShow: 2.4,
-          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 795,
         settings: {
           slidesToShow: 2.3,
-          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 770,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 585,
+        settings: {
+          slidesToShow: 1.8,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1.7,
+        },
+      },
+      {
+        breakpoint: 470,
+        settings: {
+          slidesToShow: 1.6,
+        },
+      },
+      {
+        breakpoint: 445,
+        settings: {
+          slidesToShow: 1.5,
+        },
+      },
+      {
+        breakpoint: 415,
+        settings: {
+          slidesToShow: 1.4,
         },
       },
     ],
