@@ -17,6 +17,12 @@ interface Settings {
   autoplay: boolean;
   autoplaySpeed: number;
   pauseOnHover: boolean;
+  responsive: {
+    breakpoint: number;
+    settings: {
+      dots: boolean;
+    };
+  }[];
 }
 
 interface Links {
