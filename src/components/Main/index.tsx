@@ -31,7 +31,16 @@ const Main: React.FC<MainProps> = ({ array, title }) => {
     autoplay: true,
     autoplaySpeed: 6000,
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          dots: false,
+        },
+      },
+    ], 
   };
+
   
 
   const links: Links[] = [
@@ -53,7 +62,7 @@ const Main: React.FC<MainProps> = ({ array, title }) => {
     return (
       <Slider {...settings}>
         {array.map((item, id) => {
-          return <img key={id} src={item} alt="" />;
+          return <img className={style.main_slider__img} key={id} src={item} alt="" />;
         })}
       </Slider>
     );

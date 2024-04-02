@@ -30,6 +30,7 @@ const Footer = () => {
             Send us a message{" "}
           </p>
         </article>
+        <hr className={style.header_right__hr} />
         <article className={style.header_right}>
           <h2>Follow us</h2>
           <section className={style.header_right__logos}>

@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   transition: 0.3s ease-in-out;
-
   .header_left {
     h2 {
       color: rgb(0, 128, 96);
@@ -104,3 +103,28 @@
   }
 }
 
+@media screen and (min-width:370px) and (max-width:767px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+
+    .header_left {
+      display: none;
+    }
+
+    .header_right__hr {
+      display: flex;
+      padding: 0 20px;
+      width: 90%;
+
+    }
+  }
+hr{
+  width: 95%;
+}
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
