@@ -1,5 +1,5 @@
 .tour {
-  //   background:   #faf7ed;
+  background: white;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
   width: 363px;
@@ -7,9 +7,10 @@
   border-radius: 3px;
   position: relative;
   img {
+    width: 100%;
     border-radius: 3px;
   }
-  .tour__days {
+  .tour_days {
     display: flex;
     position: absolute;
     right: 0px;
@@ -24,7 +25,7 @@
       color: #008060;
     }
   }
-  .tour__bottom {
+  .tour_bottom {
     padding: 15px 20px;
     .bottom__title {
       cursor: pointer;
@@ -44,7 +45,7 @@
         border-bottom: 1px solid rgb(220, 220, 220);
       }
     }
-    .bottom__choice {
+    .bottom_choice {
       p {
         margin: 14px 0 10px 0;
         color: rgb(134, 134, 134);
@@ -52,7 +53,7 @@
         font-weight: 500;
         line-height: 18px;
       }
-      .bottom__choice_btns {
+      .bottom_choice__btns {
         display: flex;
         justify-content: space-between;
         button {
@@ -78,13 +79,38 @@
 .destination {
   width: 363px;
   border-radius: 3px;
-  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
   background: rgb(255, 255, 255);
   position: relative;
-  .destination__days {
+  @media (max-width: 1360px) {
+    width: 350px;
+  }
+  @media (max-width: 1165px) {
+    width: 330px;
+  }
+  @media (max-width: 1110px) {
+    width: 320px;
+  }
+  @media (max-width: 1080px) {
+    width: 300px;
+  }
+  @media (max-width: 1010px) {
+    width: 290px;
+  }
+  @media (max-width: 690px) {
+    width: 270px;
+  }
+  @media (max-width: 655px) {
+    width: 250px;
+  }
+  @media (max-width: 600px) {
+    width: 242px;
+  }
+  .destination_days {
+    margin: 0 !important;
     display: flex;
     position: absolute;
     right: 0;
+    cursor: pointer;
     b {
       padding: 24px 15px;
       color: rgb(0, 128, 96);
@@ -92,20 +118,40 @@
       font-weight: 600;
       border-radius: 0px 3px 0px 32px;
       background: rgb(255, 255, 255);
+      @media (max-width: 625px) {
+        padding: 20px 15px;
+        font-size: 12px;
+      }
     }
   }
-  .destination__bottom {
+  img {
+    width: 100%;
+  }
+  .destination_bottom {
     padding: 15px 20px;
+    cursor: pointer;
+    @media (max-width: 995px) {
+      padding: 13px 18px;
+    }
     p {
       color: rgb(134, 134, 134);
       font-size: 15px;
       font-weight: 500;
       margin-bottom: 4px;
+      @media (max-width: 995px) {
+        font-size: 13px;
+      }
     }
     h3 {
       color: rgb(71, 71, 71);
       font-size: 18px;
       font-weight: 500;
+      @media (max-width: 995px) {
+        font-size: 16px;
+      }
+      @media (max-width: 625px) {
+        font-size: 15px;
+      }
     }
   }
 }
@@ -115,28 +161,76 @@
   width: 364px;
   border: 1px solid rgb(169, 169, 169);
   border-radius: 3px;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   background: rgb(255, 255, 255);
-  .review__header {
+  @media (max-width: 1360px) {
+    width: 350px;
+  }
+  @media (max-width: 1165px) {
+    width: 330px;
+  }
+  @media (max-width: 1110px) {
+    width: 320px;
+  }
+  @media (max-width: 1080px) {
+    width: 300px;
+  }
+  @media (max-width: 1010px) {
+    width: 290px;
+  }
+  @media (max-width: 695px) {
+    width: 270px;
+  }
+  @media (max-width: 655px) {
+    width: 250px;
+  }
+  @media (max-width: 600px) {
+    width: 242px;
+  }
+  .review_header {
     display: flex;
     gap: 20px;
     align-items: center;
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(220, 220, 220);
     cursor: pointer;
+    @media (max-width: 1360px) {
+      gap: 0px;
+    }
+    @media (max-width: 1010px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+    @media (max-width: 695px) {
+      padding-bottom: 15px;
+    }
     h3 {
       margin-bottom: 4px;
       color: rgb(71, 71, 71);
       font-size: 16px;
       font-weight: 600;
+      @media (max-width: 1360px) {
+        font-size: 14px;
+      }
+      @media (max-width: 1080px) {
+        font-size: 12px;
+      }
     }
     p {
       color: rgb(0, 128, 96);
       font-size: 14px;
       font-weight: 600;
+      @media (max-width: 1360px) {
+        font-size: 13px;
+      }
+      @media (max-width: 1080px) {
+        font-size: 12px;
+      }
+      @media (max-width: 1010px) {
+        text-align: center;
+      }
     }
   }
-  .review__description {
+  .review_description {
     margin: 20px 0;
     width: 100%;
     color: rgb(134, 134, 134);
@@ -144,6 +238,15 @@
     font-weight: 500;
     line-height: 26px;
     cursor: pointer;
+    @media (max-width: 1080px) {
+      font-size: 15px;
+      line-height: 24px;
+    }
+    @media (max-width: 695px) {
+      margin: 10px 0;
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
   button {
     width: 100%;
@@ -155,21 +258,39 @@
     font-weight: 600;
     border: none;
     cursor: pointer;
+    @media (max-width: 695px) {
+      font-size: 13px;
+    }
+    @media (max-width: 500px) {
+      padding: 13px 35px;
+    }
   }
 }
 
 .team {
   width: 264px;
   background: rgb(0, 76, 63);
+  @media (max-width: 1195px) {
+    width: 250px;
+  }
+  @media (max-width: 860px) {
+    width: 242px;
+  }
+
   .team__image {
     margin-bottom: 10px;
     border-radius: 3px;
     cursor: pointer;
+    @media (max-width: 1195px) {
+      width: 250px;
+    }
+    @media (max-width: 860px) {
+      width: 242px;
+    }
   }
-  .team__bottom {
+  .team_bottom {
     padding: 15px 10px;
     border-radius: 3px;
-    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
     background: rgb(255, 255, 255);
     cursor: pointer;
     h3 {
@@ -177,11 +298,23 @@
       font-size: 16px;
       font-weight: 500;
       margin-bottom: 8px;
+      @media (max-width: 1020px) {
+        font-size: 15px;
+      }
+      @media (max-width: 730px) {
+        font-size: 13px;
+      }
     }
     p {
       color: rgb(134, 134, 134);
       font-size: 14px;
       font-weight: 500;
+      @media (max-width: 1020px) {
+        font-size: 13px;
+      }
+      @media (max-width: 730px) {
+        font-size: 11px;
+      }
     }
   }
 }
