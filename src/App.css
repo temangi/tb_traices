@@ -6,3 +6,9 @@
   padding: 0;
   font-family: Montserrat;
 }
+
+.slick-prev,
+.slick-next {
+  right: 0 !important;
+  display: none !important;
+}
