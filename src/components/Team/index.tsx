@@ -4,40 +4,9 @@ import Slider from "react-slick";
 import { useMemo } from "react";
 import Prev from "../sliderButton/PrevButton";
 import Next from "../sliderButton/NextButton";
-
-interface Team {
-  name: string;
-  description: string;
-}
+import { TeamObj } from "../../constants/Team";
 
 export const Team = () => {
-  const TeamObj: Team[] = [
-    {
-      name: "Samira Djakipova",
-      description: "Treking guide",
-    },
-    {
-      name: "Samira Djakipova",
-      description: "Treking guide",
-    },
-    {
-      name: "Samira Djakipova",
-      description: "Treking guide",
-    },
-    {
-      name: "Samira Djakipova",
-      description: "Treking guide",
-    },
-    {
-      name: "Samira Djakipova",
-      description: "Treking guide",
-    },
-    {
-      name: "Samira Djakipova",
-      description: "Treking guide",
-    },
-  ];
-
   const PrevArrow = ({ onClick }: { onClick: () => void }) => (
     <div className={style.prev__arrow}>
       <Prev onClick={onClick} />

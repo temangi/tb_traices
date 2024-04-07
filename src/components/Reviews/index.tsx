@@ -5,70 +5,10 @@ import Slider from "react-slick";
 import Prev from "../sliderButton/PrevButton";
 import Next from "../sliderButton/NextButton";
 import arrow from "../img/RightGreenArrow.svg";
-
-interface Review {
-  name: string;
-  country: string;
-  description: string;
-}
+import { ReviewObj } from "../../constants/Review";
 
 const Review = () => {
-  const ReviewObj: Review[] = [
-    {
-      name: "TOKTORBAEVA SABRINA",
-      country: "Kyrgyzstan",
-      description:
-        "We had a great time on 12 days best of Turkey. What made it amazing was the great people from down under, England, Spain and the USA. Samy, no words to describe your sage...",
-    },
-    {
-      name: "TOKTORBAEVA SABRINA",
-      country: "Germany",
-      description:
-        "We had a great time on 12 days best of Turkey. What made it amazing was the great people from down under, England, Spain and the USA. Samy, no words to describe your sage...",
-    },
-    {
-      name: "TOKTORBAEVA SABRINA",
-      country: "China",
-      description:
-        "We had a great time on 12 days best of Turkey. What made it amazing was the great people from down under, England, Spain and the USA. Samy, no words to describe your sage...",
-    },
-    {
-      name: "TOKTORBAEVA SABRINA",
-      country: "Kyrgyzstan",
-      description:
-        "We had a great time on 12 days best of Turkey. What made it amazing was the great people from down under, England, Spain and the USA. Samy, no words to describe your sage...",
-    },
-    {
-      name: "TOKTORBAEVA SABRINA",
-      country: "Kyrgyzstan",
-      description:
-        "We had a great time on 12 days best of Turkey. What made it amazing was the great people from down under, England, Spain and the USA. Samy, no words to describe your sage...",
-    },
-    {
-      name: "TOKTORBAEVA SABRINA",
-      country: "Kyrgyzstan",
-      description:
-        "We had a great time on 12 days best of Turkey. What made it amazing was the great people from down under, England, Spain and the USA. Samy, no words to describe your sage...",
-    },
-    {
-      name: "TOKTORBAEVA SABRINA",
-      country: "Kyrgyzstan",
-      description:
-        "We had a great time on 12 days best of Turkey. What made it amazing was the great people from down under, England, Spain and the USA. Samy, no words to describe your sage...",
-    },
-    {
-      name: "TOKTORBAEVA SABRINA",
-      country: "Kyrgyzstan",
-      description:
-        "We had a great time on 12 days best of Turkey. What made it amazing was the great people from down under, England, Spain and the USA. Samy, no words to describe your sage...",
-    },
-    {
-      name: "TOKTORBAEVA SABRINA",
-      country: "Kyrgyzstan",
-      description:
-        "We had a great time on 12 days best of Turkey. What made it amazing was the great people from down under, England, Spain and the USA. Samy, no words to describe your sage...",
-    },
-  ];
+ 
 
   const PrevArrow = ({ onClick }: { onClick: () => void }) => (
     <div className={style.prev__arrow}>

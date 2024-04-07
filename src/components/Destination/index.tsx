@@ -6,51 +6,9 @@ import Prev from "../sliderButton/PrevButton";
 import Next from "../sliderButton/NextButton";
 import arrow from "../img/ArrowRight.svg";
 import { Link } from "react-router-dom";
-
-interface Tour {
-  title: string;
-  days: number;
-}
+import { ToursObj } from "../../constants/TourCards";
 
 const Destination = () => {
-  const ToursObj: Tour[] = [
-    {
-      title: "Naryn",
-      days: 5,
-    },
-    {
-      title: "Talas",
-      days: 9,
-    },
-    {
-      title: "Bishkek",
-      days: 1,
-    },
-    {
-      title: "Ysyk-Kol",
-      days: 6,
-    },
-    {
-      title: "Naryn",
-      days: 5,
-    },
-    {
-      title: "Talas",
-      days: 9,
-    },
-    {
-      title: "Bishkek",
-      days: 1,
-    },
-    {
-      title: "Naryn",
-      days: 10,
-    },
-    {
-      title: "Osh",
-      days: 4,
-    },
-  ];
 
   const PrevArrow = ({ onClick }: { onClick: () => void }) => (
     <div className={style.prev__arrow}>
