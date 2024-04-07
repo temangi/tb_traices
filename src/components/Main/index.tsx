@@ -15,7 +15,7 @@ interface Links {
 }
 const Main: React.FC<MainProps> = ({ array, title }) => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToScroll: 1,
     autoplay: true,

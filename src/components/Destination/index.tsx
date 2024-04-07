@@ -121,36 +121,42 @@ const Destination = () => {
         breakpoint: 605,
         settings: {
           slidesToShow: 2,
+          dots: true,
         },
       },
       {
         breakpoint: 560,
         settings: {
           slidesToShow: 1.9,
+          dots: true,
         },
       },
       {
         breakpoint: 485,
         settings: {
           slidesToShow: 1.8,
+          dots: true,
         },
       },
       {
         breakpoint: 460,
         settings: {
           slidesToShow: 1.6,
+          dots: true,
         },
       },
       {
         breakpoint: 410,
         settings: {
           slidesToShow: 1.5,
+          dots: true,
         },
       },
       {
         breakpoint: 385,
         settings: {
           slidesToShow: 1.4,
+          dots: true,
         },
       },
     ],
