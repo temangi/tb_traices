@@ -27,7 +27,7 @@ const Destination = () => {
     infinite: false,
     speed: 900,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
     prevArrow: <PrevArrow onClick={() => {}} />,
     nextArrow: <NextArrow onClick={() => {}} />,
@@ -36,7 +36,6 @@ const Destination = () => {
         breakpoint: 1210,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 2,
         },
       },
       {

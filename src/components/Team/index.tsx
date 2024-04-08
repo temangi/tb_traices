@@ -7,6 +7,7 @@ import Next from "../sliderButton/NextButton";
 import { TeamObj } from "../../constants/Team";
 
 export const Team = () => {
+
   const PrevArrow = ({ onClick }: { onClick: () => void }) => (
     <div className={style.prev__arrow}>
       <Prev onClick={onClick} />
@@ -24,7 +25,7 @@ export const Team = () => {
     infinite: false,
     speed: 900,
     slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     initialSlide: 0,
     prevArrow: <PrevArrow onClick={() => {}} />,
     nextArrow: <NextArrow onClick={() => {}} />,
