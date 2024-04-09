@@ -8,8 +8,6 @@ import arrow from "../img/RightGreenArrow.svg";
 import { ReviewObj } from "../../constants/Review";
 
 const Review = () => {
- 
-
   const PrevArrow = ({ onClick }: { onClick: () => void }) => (
     <div className={style.prev__arrow}>
       <Prev onClick={onClick} />
@@ -27,7 +25,7 @@ const Review = () => {
     infinite: false,
     speed: 900,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     initialSlide: 0,
     prevArrow: <PrevArrow onClick={() => {}} />,
     nextArrow: <NextArrow onClick={() => {}} />,
@@ -48,54 +46,63 @@ const Review = () => {
         breakpoint: 910,
         settings: {
           slidesToShow: 2.6,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 855,
         settings: {
           slidesToShow: 2.4,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 795,
         settings: {
           slidesToShow: 2.3,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 770,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 585,
         settings: {
           slidesToShow: 1.8,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 500,
         settings: {
           slidesToShow: 1.7,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 470,
         settings: {
           slidesToShow: 1.6,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 445,
         settings: {
           slidesToShow: 1.5,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 415,
         settings: {
           slidesToShow: 1.4,
+          slidesToScroll: 1,
         },
       },
     ],

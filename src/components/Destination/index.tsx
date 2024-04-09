@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 import { ToursObj } from "../../constants/TourCards";
 
 const Destination = () => {
-
   const PrevArrow = ({ onClick }: { onClick: () => void }) => (
     <div className={style.prev__arrow}>
       <Prev onClick={onClick} />
@@ -27,7 +26,7 @@ const Destination = () => {
     infinite: false,
     speed: 900,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     initialSlide: 0,
     prevArrow: <PrevArrow onClick={() => {}} />,
     nextArrow: <NextArrow onClick={() => {}} />,
@@ -48,6 +47,7 @@ const Destination = () => {
         breakpoint: 910,
         settings: {
           slidesToShow: 2.6,
+          slidesToScroll: 2,
         },
       },
       {
@@ -60,54 +60,63 @@ const Destination = () => {
         breakpoint: 795,
         settings: {
           slidesToShow: 2.3,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 770,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 625,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 605,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 560,
         settings: {
           slidesToShow: 1.9,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 485,
         settings: {
           slidesToShow: 1.8,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 460,
         settings: {
           slidesToShow: 1.6,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 410,
         settings: {
           slidesToShow: 1.5,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 385,
         settings: {
           slidesToShow: 1.4,
+          slidesToScroll: 1,
         },
       },
     ],
