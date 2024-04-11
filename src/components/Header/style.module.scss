@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   height: 60px;
   width: 100%;
   z-index: 1;
@@ -54,6 +55,10 @@
       background: rgb(242, 242, 242);
     }
   }
+  .burgerImg {
+    display: none;
+    cursor: pointer;
+  }
 }
 .active_select__a {
   color: rgb(0, 128, 96);
@@ -65,6 +70,79 @@
   }
   @media (max-width: 830px) {
     font-size: 11px;
+  }
+  @media (max-width: 765px) {
+    padding: 15px 20px;
+    color: rgb(71, 71, 71);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(220, 220, 220);
+  }
+}
+
+.burger {
+  width: 100%;
+  position: absolute;
+  max-height: 200vh;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: end;
+  top: 60px;
+  right: 0px;
+  background: rgb(0, 0, 0, 0.7);
+  @media (min-width: 765px) {
+    display: none;
+  }
+  .burger_header {
+    width: 234px;
+    box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    .burger_header__links {
+      display: flex;
+      flex-direction: column;
+      :hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
+      .header_links__a {
+        padding: 15px 20px;
+        color: rgb(71, 71, 71);
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        border-bottom: 1px solid rgb(220, 220, 220);
+        cursor: pointer;
+      }
+      .email {
+        margin: 20px 15px;
+        padding: 14px 22px;
+        color: rgb(71, 71, 71);
+        font-size: 12px;
+        font-weight: 700;
+        text-decoration: none;
+        border: 2px solid rgb(71, 71, 71);
+        cursor: pointer;
+      }
+    }
+    .burger_footer {
+      background: rgb(0, 76, 63);
+      padding-bottom: 150%;
+      p {
+        padding: 20px 0 10px 20px;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .burger__logos {
+        padding: 15px 20px 16px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 27px;
+        img {
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
 
@@ -130,6 +208,29 @@
       input::placeholder {
         font-size: 11px;
       }
+    }
+  }
+}
+
+@media (max-width: 765px) {
+  .header {
+    padding: 16px 24px;
+    .header_left {
+      .header_left__a {
+        font-size: 16px;
+      }
+      hr {
+        display: none;
+      }
+      .header__links {
+        display: none;
+      }
+    }
+    .header_right {
+      display: none;
+    }
+    .burgerImg {
+      display: block;
     }
   }
 }

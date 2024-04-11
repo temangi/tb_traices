@@ -1,23 +1,17 @@
 import style from "./style.module.scss";
 import search from "../img/searchIcon.svg";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { links } from "../../constants/Header";
+import burger from "../img/burger.svg";
+import owl from "../img/sova.svg";
+import whatsApp from "../img/whatsup.svg";
+import facebook from "../img/facebookMobile.svg";
+import insta from "../img/InstaMobile.svg";
 
 const Header = () => {
-  interface Link {
-    link: string;
-    href: string;
-  }
-
   const location = useLocation();
-
-  const links: Link[] = [
-    { link: "Home", href: "/" },
-    { link: "Tours", href: "/Tours" },
-    { link: "Destinations", href: "/Destinations" },
-    { link: "About us", href: "/AboutUs" },
-    { link: "Share tours", href: "/ShareTours" },
-  ];
+  const [open, setOpen] = useState(false);
 
   const memoLinks = useMemo(() => {
     return links.map((a, id) => {
@@ -37,6 +31,31 @@ const Header = () => {
     });
   }, [links]);
 
+  const memoBurger = useMemo(() => {
+    return (
+      <main className={style.burger}>
+        <section className={style.burger_header}>
+          <div className={style.burger_header__links}>
+            {memoLinks}
+            <a className={style.email} href="">
+              experts@kyrgyztraces.kg
+            </a>
+          </div>
+          <div className={style.burger_footer}>
+            <p>Follow us</p>
+            <hr />
+            <div className={style.burger__logos}>
+              <img src={owl} alt="Owl" />
+              <img src={whatsApp} alt="whatsApp" />
+              <img src={facebook} alt="Facebook" />
+              <img src={insta} alt="Instagram" />
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  }, []);
+
   return (
     <>
       <header className={style.header}>
@@ -51,6 +70,13 @@ const Header = () => {
           <input placeholder="Search tour" type="text" />
           <img src={search} alt="search icon" />
         </div>
+        <img
+          src={burger}
+          onClick={() => setOpen(!open)}
+          className={style.burgerImg}
+          alt=""
+        />
+        {open && memoBurger}
       </header>
     </>
   );
