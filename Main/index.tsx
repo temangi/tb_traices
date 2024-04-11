@@ -4,13 +4,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
-import { links } from "../../constants/Main";
 
 interface MainProps {
   title: string;
   array: string[];
 }
-
+interface Links {
+  title: string;
+  link: string;
+}
 const Main: React.FC<MainProps> = ({ array, title }) => {
   const settings = {
     dots: false,
@@ -21,6 +23,20 @@ const Main: React.FC<MainProps> = ({ array, title }) => {
     pauseOnHover: true,
   };
 
+  const links: Links[] = [
+    {
+      title: "Find your tours",
+      link: "/Tours",
+    },
+    {
+      title: "Share Tours",
+      link: "/ShareTours",
+    },
+    {
+      title: "Watch video",
+      link: "https://youtu.be/4xnsmyI5KMQ?si=ZZoucUBCdGusSRNh",
+    },
+  ];
 
   const memoSlider = useMemo(() => {
     return (

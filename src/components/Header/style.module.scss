@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 0.3s ease-in-out;
   .header_left {
     display: flex;
     align-items: center;
@@ -34,15 +35,12 @@
         font-size: 14px;
         font-weight: 600;
         text-decoration: none;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
         &:hover {
           color: rgb(0, 128, 96);
         }
       }
     }
-  }
-  .header_right__button{
-    display: none;
   }
   .header_right {
     padding: 11px 20px;
@@ -64,6 +62,9 @@
   font-size: 14px;
   @media (max-width: 1000px) {
     font-size: 12px;
+  }
+  @media (max-width: 830px) {
+    font-size: 11px;
   }
 }
 
@@ -96,9 +97,6 @@
         }
       }
     }
-    .header_right__button{
-      display: none;
-    }
     .header_right {
       padding: 9px 18px;
       input::placeholder {
@@ -108,3 +106,30 @@
   }
 }
 
+@media (max-width: 930px) {
+  .header {
+    padding: 17px 40px;
+  }
+}
+
+@media (max-width: 830px) {
+  .header {
+    .header_left {
+      .header_left__a {
+        font-size: 14px;
+      }
+      .header__links {
+        gap: 17px;
+        .header_links__a {
+          font-size: 11px;
+        }
+      }
+    }
+    .header_right {
+      padding: 7px 13px;
+      input::placeholder {
+        font-size: 11px;
+      }
+    }
+  }
+}

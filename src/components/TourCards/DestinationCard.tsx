@@ -2,22 +2,20 @@ import style from "./Cards.module.scss";
 import img from "../img/Picture 1.svg";
 
 interface destinationProps {
-  obj: {
-    title: string;
-    days: number;
-  };
+  title: string;
+  days: number;
 }
 
-const DestinationCard: React.FC<destinationProps> = ({ obj }) => {
+const DestinationCard: React.FC<destinationProps> = ({title, days}) => {
   return (
     <article className={style.destination}>
-      <div className={style.destination__days}>
-        <b>{obj.days} days</b>
+      <div className={style.destination_days}>
+        <b>{days} days</b>
       </div>
       <img src={img} alt="" />
-      <div className={style.destination__bottom}>
+      <div className={style.destination_bottom}>
         <p>Area:</p>
-        <h3>{obj.title}</h3>
+        <h3>{title}</h3>
       </div>
     </article>
   );
