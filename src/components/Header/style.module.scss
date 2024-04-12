@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
   .header_left {
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@
   }
   @media (max-width: 765px) {
     padding: 15px 20px;
-    color: rgb(71, 71, 71);
+    color: rgb(0, 128, 96);
     font-size: 15px;
     font-weight: 500;
     text-decoration: none;
@@ -85,12 +85,77 @@
   width: 100%;
   position: absolute;
   max-height: 200vh;
-  overflow-y: scroll;
   display: flex;
   justify-content: end;
   top: 60px;
   right: 0px;
   background: rgb(0, 0, 0, 0.7);
+  animation: fadeIn .7s ease-in-out forwards;
+  @media (min-width: 765px) {
+    display: none;
+  }
+  .burger_header {
+    width: 234px;
+    box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    .burger_header__links {
+      display: flex;
+      flex-direction: column;
+      :hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
+      .header_links__a {
+        padding: 15px 20px;
+        color: rgb(71, 71, 71);
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        border-bottom: 1px solid rgb(220, 220, 220);
+        cursor: pointer;
+      }
+      .email {
+        margin: 20px 15px;
+        padding: 14px 22px;
+        color: rgb(71, 71, 71);
+        font-size: 12px;
+        font-weight: 700;
+        text-decoration: none;
+        border: 2px solid rgb(71, 71, 71);
+        cursor: pointer;
+      }
+    }
+    .burger_footer {
+      background: rgb(0, 76, 63);
+      padding-bottom: 150%;
+      p {
+        padding: 20px 0 10px 20px;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .burger__logos {
+        padding: 15px 20px 16px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 27px;
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.burgerActive {
+  width: 100%;
+  position: absolute;
+  max-height: 200vh;
+  display: flex;
+  justify-content: end;
+  top: 60px;
+  right: 0px;
+  background: rgb(0, 0, 0, 0.7);
+  animation: fadeOut 2.3s ease ;
   @media (min-width: 765px) {
     display: none;
   }
@@ -232,5 +297,27 @@
     .burgerImg {
       display: block;
     }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
   }
 }

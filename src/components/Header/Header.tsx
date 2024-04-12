@@ -13,6 +13,10 @@ const Header = () => {
   const location = useLocation();
   const [open, setOpen] = useState(false);
 
+  const handleToggleMenu = () => {
+    setOpen(!open);
+  };
+
   const memoLinks = useMemo(() => {
     return links.map((a, id) => {
       return (
@@ -33,8 +37,11 @@ const Header = () => {
 
   const memoBurger = useMemo(() => {
     return (
-      <main className={style.burger}>
-        <section className={style.burger_header}>
+      <div className={`${style.burger} ${open ? style.burgerActive : ""}`}>
+        <section
+          onClick={(e) => e.stopPropagation()}
+          className={style.burger_header}
+        >
           <div className={style.burger_header__links}>
             {memoLinks}
             <a className={style.email} href="">
@@ -52,7 +59,7 @@ const Header = () => {
             </div>
           </div>
         </section>
-      </main>
+      </div>
     );
   }, []);
 
@@ -72,7 +79,7 @@ const Header = () => {
         </div>
         <img
           src={burger}
-          onClick={() => setOpen(!open)}
+          onClick={handleToggleMenu}
           className={style.burgerImg}
           alt=""
         />

@@ -20,6 +20,9 @@
     margin-top: 60px;
     display: flex;
     gap: 30px;
+    @media (max-width: 765px) {
+      display: none;
+    }
     button {
       padding: 18px 65px;
       color: rgb(255, 255, 255);
@@ -40,6 +43,13 @@
     }
   }
 }
+
+.mainImg {
+  width: 100%;
+  // height: 283px;
+  object-fit: cover;
+}
+
 @media (max-width: 1550px) {
   .main {
     top: 40%;
@@ -175,6 +185,26 @@
     }
     h1 {
       font-size: 50px;
+    }
+    .main_btns {
+      margin-top: 26px;
+      button {
+        padding: 10px 45px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 850px) {
+  .main {
+    top: 26%;
+    p {
+      font-size: 12px;
+    }
+    h1 {
+      font-size: 40px;
     }
     .main_btns {
       margin-top: 26px;

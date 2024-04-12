@@ -6,6 +6,7 @@
   gap: 40px;
   justify-content: space-between;
   flex-direction: column;
+  overflow: hidden;
   transition: 0.3s ease-in-out;
   @media (max-width: 930px) {
     gap: 20px;
