@@ -90,7 +90,7 @@
   top: 60px;
   right: 0px;
   background: rgb(0, 0, 0, 0.7);
-  animation: fadeIn .7s ease-in-out forwards;
+  animation: fadeIn 1s ease forwards;
   @media (min-width: 765px) {
     display: none;
   }
@@ -155,7 +155,7 @@
   top: 60px;
   right: 0px;
   background: rgb(0, 0, 0, 0.7);
-  animation: fadeOut 2.3s ease ;
+  animation: fadeOut 2.3s ease;
   @media (min-width: 765px) {
     display: none;
   }
