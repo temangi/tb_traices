@@ -23,9 +23,6 @@
         margin: 0 20px;
       }
     }
-    .slick-dots {
-      display: block !important;
-    }
   }
   .header {
     display: flex;
@@ -72,7 +69,7 @@
   position: absolute;
   top: 40%;
   left: -20px;
-  @media (max-width: 585px) {
+  @media (max-width: 625px) {
     display: none;
   }
 }
@@ -106,7 +103,7 @@
   @media (max-width: 1228px) {
     right: 18px;
   }
-  @media (max-width: 585px) {
+  @media (max-width: 625px) {
     display: none;
   }
 }
