@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   transition: 0.3s ease-in-out;
+  overflow: hidden;
   .header_left {
     h2 {
       color: rgb(0, 128, 96);
