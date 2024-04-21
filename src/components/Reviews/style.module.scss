@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  overflow: hidden;
   @media (max-width: 930px) {
     gap: 30px;
   }
@@ -21,9 +22,6 @@
       .slick-slide div {
         margin: 0 20px;
       }
-    }
-    .slick-dots {
-      display: block !important;
     }
   }
   .header {
@@ -71,7 +69,7 @@
   position: absolute;
   top: 40%;
   left: -20px;
-  @media (max-width: 585px) {
+  @media (max-width: 625px) {
     display: none;
   }
 }
@@ -105,7 +103,7 @@
   @media (max-width: 1228px) {
     right: 18px;
   }
-  @media (max-width: 585px) {
+  @media (max-width: 625px) {
     display: none;
   }
 }

@@ -17,16 +17,15 @@ const Main: React.FC<MainProps> = ({ array, title }) => {
     infinite: true,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 6000,
     pauseOnHover: true,
   };
-
 
   const memoSlider = useMemo(() => {
     return (
       <Slider {...settings}>
         {array.map((item, id) => {
-          return <img key={id} src={item} alt="" />;
+          return <img className={style.mainImg} key={id} src={item} alt="" />;
         })}
       </Slider>
     );
