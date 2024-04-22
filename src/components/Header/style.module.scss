@@ -89,7 +89,7 @@
     right: 0; 
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); 
     background: rgba(0, 0, 0, 0.7); 
-    animation: fadeIn 1s forwards ; 
+    animation: fadeIn 1.5s forwards ; 
     @media (min-width: 765px) { 
       display: none; 
     } 
@@ -147,7 +147,7 @@
     right: 0; 
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); 
     background: rgba(0, 0, 0, 0.7); 
-    animation: fadeOut 1s ; 
+    animation: fadeOut 1.5s ; 
     opacity: 0; 
     @media (min-width: 765px) { 
       display: none; 
