@@ -50,7 +50,6 @@ const Main: React.FC<MainProps> = ({ array, title }) => {
         <p>Welcome to Kyrgyz Traces</p>
         <h1>{title}</h1>
         {renderBtns}
-        <article className={style.main_pagination}></article>
       </main>
     </>
   );
