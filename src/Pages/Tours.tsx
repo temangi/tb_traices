@@ -5,6 +5,7 @@ import home from "../components/img/HomeBg.png";
 import tours from "../components/img/TourBg.png";
 import destinations from "../components/img/DestinationsBg.png";
 import aboutUs from "../components/img/AboutUsBg.png";
+import SearchBlock from "../components/SearchBlock";
 
 const Tours = () => {
   const array: string[] = [tours, home, destinations, aboutUs];
@@ -13,6 +14,7 @@ const Tours = () => {
     <>
       <Header />
       <Main array={array} title={title} />
+      <SearchBlock/>
       <Footer />
     </>
   );

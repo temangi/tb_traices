@@ -13,7 +13,7 @@ const Header = () => {
   const location = useLocation(); 
   const [open, setOpen] = useState(false); 
   const [burgerOpen, setBurgerOpen] = useState(false) 
- 
+
   const handleClickBurger = () => { 
     setOpen(!open) 
     setBurgerOpen(true) 
