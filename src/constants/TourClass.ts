@@ -15,7 +15,7 @@ export const FilterCards = [
     ],
   },
   {
-    title: "Places i want to visit",
+    title: "Places",
     id: 2,
     card: [
       { name: "Cholpon - Ata", open: false, id: 1 },
@@ -42,7 +42,7 @@ export const FilterCards = [
     ],
   },
   {
-    title: "Activities i want to do",
+    title: "Activities",
     id: 3,
     card: [
       { name: "Backpacking", open: false, id: 1 },

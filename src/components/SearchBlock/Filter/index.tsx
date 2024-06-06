@@ -126,14 +126,10 @@ const Filter: React.FC<Card> = ({ title, card }) => {
       <section onClick={handleClick} className={style.filterBtn}>
         <div className={style.filterBtn_left}>
           <p className={count > 0 ? style.title_active : style.title_notActive}>
-            {title}
+          {title === "Duration" && count > 0 ? day : title }
           </p>
-
           <p className={style.count}>
             {title !== "Duration" && count > 0 ? `(${count})` : ""}
-          </p>
-          <p className={style.days}>
-            {title === "Duration" && count > 0 ? `(${day})` : ""}
           </p>
         </div>
         <img src={arrow} alt="arrow" />
