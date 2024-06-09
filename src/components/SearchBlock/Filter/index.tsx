@@ -27,11 +27,6 @@ const Filter: React.FC<Card> = ({ title, card }) => {
     setOpenModal(true);
   };
 
-  useEffect(() => {
-    const body = document.body;
-    body.style.overflow = isModal ? "hidden" : "";
-  }, [isModal]);
-
   const clickBtn = (id: number) => {
     const arr = select.map((item) => {
       const status = item.open;
@@ -65,6 +60,11 @@ const Filter: React.FC<Card> = ({ title, card }) => {
   const apply = () => {
     setIsModal(!isModal);
   };
+
+  useEffect(() => {
+    const body = document.body;
+    body.style.overflow = isModal ? "hidden" : "";
+  }, [isModal]);
 
   useEffect(() => {
     let count: number = 0;
@@ -126,7 +126,7 @@ const Filter: React.FC<Card> = ({ title, card }) => {
       <section onClick={handleClick} className={style.filterBtn}>
         <div className={style.filterBtn_left}>
           <p className={count > 0 ? style.title_active : style.title_notActive}>
-          {title === "Duration" && count > 0 ? day : title }
+            {title === "Duration" && count > 0 ? day : title}
           </p>
           <p className={style.count}>
             {title !== "Duration" && count > 0 ? `(${count})` : ""}
